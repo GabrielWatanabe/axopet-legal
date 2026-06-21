@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-mail confirmado — AxôPet</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      background: #f5f5f5; padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .card {
+      max-width: 420px; width: 100%; background: #ffffff;
+      border-radius: 20px; overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.10); text-align: center;
+    }
+    .header { background: #C25B4C; padding: 40px 32px 28px; color: #fff; }
+    .paw { font-size: 52px; line-height: 1; margin-bottom: 10px; }
+    .brand { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
+    .check {
+      width: 72px; height: 72px; margin: -36px auto 0;
+      background: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    .check svg { width: 38px; height: 38px; }
+    .body { padding: 16px 36px 40px; }
+    h1 { font-size: 22px; color: #1a1a1a; margin: 16px 0 10px; }
+    p { font-size: 15px; color: #555; line-height: 1.6; margin: 0; }
+    .hint {
+      margin-top: 24px; font-size: 13px; color: #888;
+      background: #FBEEE9; border-radius: 12px; padding: 14px 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="paw">🐾</div>
+      <div class="brand">AxôPet</div>
+    </div>
+    <div class="check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#C25B4C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6L9 17l-5-5" />
+      </svg>
+    </div>
+    <div class="body">
+      <h1>E-mail confirmado!</h1>
+      <p>Sua conta no AxôPet está ativa. 🎉</p>
+      <div class="hint">
+        Pode fechar esta aba, <strong>voltar para o app</strong> e fazer login para encontrar seu novo melhor amigo.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
