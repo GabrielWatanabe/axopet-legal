@@ -4,91 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Privacidade — AxôPet</title>
+  <meta name="description" content="Como o AxôPet coleta, usa e protege seus dados. Conformidade com a LGPD." />
   <style>
-    :root { --pink: #C25B4C; }
-    * { box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #1a1a1a;
-      line-height: 1.6;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
-      background: #fff;
-    }
-    h1 { color: var(--pink); font-size: 28px; margin-bottom: 4px; }
-    .updated { color: #888; font-size: 14px; margin-bottom: 32px; }
-    h2 { font-size: 18px; margin-top: 32px; border-bottom: 2px solid #f0f0f0; padding-bottom: 6px; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    a { color: var(--pink); }
-    footer { margin-top: 48px; color: #aaa; font-size: 13px; text-align: center; }
+    :root{--brand:#C25B4C;--brand-light:#D67E6E;--bg:#FAF7F5;--ink:#23201f;--muted:#8a817c;--tint:#FBEEE9;--card:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+    .hero{background:linear-gradient(135deg,var(--brand-light),var(--brand));color:#fff;padding:48px 24px 64px;text-align:center}
+    .brand{display:inline-flex;align-items:center;gap:12px;color:#fff}.brand:hover{text-decoration:none}
+    .logo{width:52px;height:52px;border-radius:15px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center}
+    .logo svg{width:32px;height:32px}
+    .brand-name{font-size:28px;font-weight:800;letter-spacing:-.5px}
+    .tagline{margin:12px 0 0;font-size:14px;color:rgba(255,255,255,.9)}
+    .wrap{max-width:720px;margin:-36px auto 0;padding:0 16px 56px}
+    .card{background:var(--card);border-radius:18px;box-shadow:0 10px 40px rgba(80,30,20,.10);padding:40px 36px}
+    h1{font-size:26px;margin:0 0 8px;letter-spacing:-.3px}
+    .updated{display:inline-block;font-size:12.5px;color:var(--muted);background:var(--tint);border-radius:999px;padding:4px 12px;margin-bottom:24px}
+    h2{font-size:18px;margin:32px 0 10px;padding-left:14px;border-left:4px solid var(--brand)}
+    p{margin:0 0 14px}ul{padding-left:22px;margin:0 0 14px}li{margin-bottom:7px}
+    .back{display:inline-block;margin-top:28px;font-size:14px;font-weight:600}
+    .site-footer{text-align:center;color:var(--muted);font-size:13px;padding:8px 16px 48px}
+    .site-footer nav{margin-bottom:8px}.site-footer a{margin:0 5px}.site-footer .muted{color:#b7afaa;margin-top:6px}
+    @media(max-width:560px){.card{padding:28px 22px}.hero{padding:40px 20px 56px}h1{font-size:22px}}
   </style>
 </head>
 <body>
-  <h1>Política de Privacidade — AxôPet</h1>
-  <p class="updated">Última atualização: junho de 2026</p>
+  <header class="hero">
+    <a class="brand" href="./index.html">
+      <span class="logo"><svg viewBox="0 0 512 512" aria-hidden="true" fill="#fff"><g transform="translate(0,-22)"><ellipse cx="256" cy="338" rx="100" ry="84"/><g transform="rotate(-22 150 240)"><ellipse cx="150" cy="240" rx="35" ry="47"/></g><g transform="rotate(-8 212 183)"><ellipse cx="212" cy="183" rx="34" ry="49"/></g><g transform="rotate(8 300 183)"><ellipse cx="300" cy="183" rx="34" ry="49"/></g><g transform="rotate(22 362 240)"><ellipse cx="362" cy="240" rx="35" ry="47"/></g></g></svg></span>
+      <span class="brand-name">AxôPet</span>
+    </a>
+    <p class="tagline">Política de Privacidade</p>
+  </header>
 
-  <h2>1. Informações que coletamos</h2>
-  <p>Coletamos as seguintes informações para operar o aplicativo:</p>
-  <ul>
-    <li>E-mail e senha (para autenticação)</li>
-    <li>Nome completo (para seu perfil)</li>
-    <li>Fotos dos pets que você cadastra</li>
-    <li>Estado e cidade (para filtrar pets por localização)</li>
-    <li>Mensagens trocadas entre usuários</li>
-    <li>Informações dos pets (espécie, raça, idade, microchip, etc.)</li>
-  </ul>
+  <div class="wrap">
+    <main class="card">
+      <h1>Política de Privacidade</h1>
+      <span class="updated">Última atualização: junho de 2026</span>
 
-  <h2>2. Como usamos suas informações</h2>
-  <p>As informações coletadas são usadas exclusivamente para:</p>
-  <ul>
-    <li>Permitir que você crie e gerencie sua conta</li>
-    <li>Exibir pets disponíveis para adoção</li>
-    <li>Facilitar a comunicação entre adotantes e responsáveis por pets</li>
-    <li>Melhorar a experiência do aplicativo</li>
-  </ul>
+      <h2>1. Informações que coletamos</h2>
+      <p>Coletamos as seguintes informações para operar o aplicativo:</p>
+      <ul>
+        <li>E-mail e senha (para autenticação)</li>
+        <li>Nome completo (para seu perfil)</li>
+        <li>Fotos dos pets que você cadastra</li>
+        <li>Estado e cidade (para filtrar pets por localização)</li>
+        <li>Mensagens trocadas entre usuários</li>
+        <li>Informações dos pets (espécie, raça, idade, microchip, etc.)</li>
+      </ul>
 
-  <h2>3. Compartilhamento de dados</h2>
-  <p>
-    Não vendemos seus dados. Seus dados são processados pelo Supabase
-    (infraestrutura na nuvem, hospedada na AWS) exclusivamente para operar o
-    aplicativo. As fotos enviadas na funcionalidade de Pet Perdido são
-    processadas pela Jina AI apenas para gerar a busca por similaridade visual.
-  </p>
+      <h2>2. Como usamos suas informações</h2>
+      <p>As informações coletadas são usadas exclusivamente para:</p>
+      <ul>
+        <li>Permitir que você crie e gerencie sua conta</li>
+        <li>Exibir pets disponíveis para adoção</li>
+        <li>Facilitar a comunicação entre adotantes e responsáveis por pets</li>
+        <li>Melhorar a experiência do aplicativo</li>
+      </ul>
 
-  <h2>4. Armazenamento e segurança</h2>
-  <p>
-    Seus dados são armazenados com segurança usando autenticação JWT,
-    armazenamento seguro no dispositivo (iOS Keychain / Android Keystore) e
-    comunicação criptografada via HTTPS.
-  </p>
+      <h2>3. Compartilhamento de dados</h2>
+      <p>
+        Não vendemos seus dados. Seus dados são processados pelo Supabase
+        (infraestrutura na nuvem, hospedada na AWS) exclusivamente para operar o
+        aplicativo. As fotos enviadas na funcionalidade de Pet Perdido são
+        processadas pela Jina AI apenas para gerar a busca por similaridade visual.
+      </p>
 
-  <h2>5. Seus direitos (LGPD)</h2>
-  <p>Você tem direito a:</p>
-  <ul>
-    <li>Acessar seus dados pessoais</li>
-    <li>Solicitar a correção de dados incorretos</li>
-    <li>Solicitar a exclusão de sua conta e dados</li>
-    <li>Exportar seus dados</li>
-  </ul>
-  <p>
-    Para exercer esses direitos, acesse as configurações do app na aba Perfil
-    ou entre em contato: <a href="mailto:contato@axopetapp.com">contato@axopetapp.com</a>
-  </p>
+      <h2>4. Armazenamento e segurança</h2>
+      <p>
+        Seus dados são armazenados com segurança usando autenticação JWT,
+        armazenamento seguro no dispositivo (iOS Keychain / Android Keystore) e
+        comunicação criptografada via HTTPS.
+      </p>
 
-  <h2>6. Retenção de dados</h2>
-  <p>
-    Seus dados são mantidos enquanto sua conta estiver ativa. Ao excluir sua
-    conta, todos os dados pessoais são removidos permanentemente em até 30 dias.
-  </p>
+      <h2>5. Seus direitos (LGPD)</h2>
+      <p>Você tem direito a:</p>
+      <ul>
+        <li>Acessar seus dados pessoais</li>
+        <li>Solicitar a correção de dados incorretos</li>
+        <li>Solicitar a exclusão de sua conta e dados</li>
+        <li>Exportar seus dados</li>
+      </ul>
+      <p>
+        Para exercer esses direitos, acesse as configurações do app na aba Perfil
+        ou entre em contato: <a href="mailto:contato@axopetapp.com">contato@axopetapp.com</a>
+      </p>
 
-  <h2>7. Contato</h2>
-  <p>
-    Em caso de dúvidas sobre esta política:
-    <a href="mailto:contato@axopetapp.com">contato@axopetapp.com</a>
-  </p>
+      <h2>6. Retenção de dados</h2>
+      <p>
+        Seus dados são mantidos enquanto sua conta estiver ativa. Ao excluir sua
+        conta, todos os dados pessoais são removidos permanentemente em até 30 dias.
+      </p>
 
-  <footer>© 2026 AxôPet</footer>
+      <h2>7. Contato</h2>
+      <p>
+        Em caso de dúvidas sobre esta política:
+        <a href="mailto:contato@axopetapp.com">contato@axopetapp.com</a>
+      </p>
+
+      <a class="back" href="./index.html">← Voltar</a>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="./privacy.html">Privacidade</a>·
+      <a href="./terms.html">Termos</a>·
+      <a href="./delete-account.html">Excluir conta</a>
+    </nav>
+    <p>© 2026 AxôPet · Todos os direitos reservados</p>
+    <p class="muted">contato@axopetapp.com</p>
+  </footer>
 </body>
 </html>

@@ -4,93 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Termos de Uso — AxôPet</title>
+  <meta name="description" content="Termos de uso do AxôPet, a plataforma de adoção responsável de pets." />
   <style>
-    :root { --pink: #C25B4C; }
-    * { box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #1a1a1a;
-      line-height: 1.6;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
-      background: #fff;
-    }
-    h1 { color: var(--pink); font-size: 28px; margin-bottom: 4px; }
-    .updated { color: #888; font-size: 14px; margin-bottom: 32px; }
-    h2 { font-size: 18px; margin-top: 32px; border-bottom: 2px solid #f0f0f0; padding-bottom: 6px; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    a { color: var(--pink); }
-    footer { margin-top: 48px; color: #aaa; font-size: 13px; text-align: center; }
+    :root{--brand:#C25B4C;--brand-light:#D67E6E;--bg:#FAF7F5;--ink:#23201f;--muted:#8a817c;--tint:#FBEEE9;--card:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+    .hero{background:linear-gradient(135deg,var(--brand-light),var(--brand));color:#fff;padding:48px 24px 64px;text-align:center}
+    .brand{display:inline-flex;align-items:center;gap:12px;color:#fff}.brand:hover{text-decoration:none}
+    .logo{width:52px;height:52px;border-radius:15px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center}
+    .logo svg{width:32px;height:32px}
+    .brand-name{font-size:28px;font-weight:800;letter-spacing:-.5px}
+    .tagline{margin:12px 0 0;font-size:14px;color:rgba(255,255,255,.9)}
+    .wrap{max-width:720px;margin:-36px auto 0;padding:0 16px 56px}
+    .card{background:var(--card);border-radius:18px;box-shadow:0 10px 40px rgba(80,30,20,.10);padding:40px 36px}
+    h1{font-size:26px;margin:0 0 8px;letter-spacing:-.3px}
+    .updated{display:inline-block;font-size:12.5px;color:var(--muted);background:var(--tint);border-radius:999px;padding:4px 12px;margin-bottom:24px}
+    h2{font-size:18px;margin:32px 0 10px;padding-left:14px;border-left:4px solid var(--brand)}
+    p{margin:0 0 14px}ul{padding-left:22px;margin:0 0 14px}li{margin-bottom:7px}
+    .back{display:inline-block;margin-top:28px;font-size:14px;font-weight:600}
+    .site-footer{text-align:center;color:var(--muted);font-size:13px;padding:8px 16px 48px}
+    .site-footer nav{margin-bottom:8px}.site-footer a{margin:0 5px}.site-footer .muted{color:#b7afaa;margin-top:6px}
+    @media(max-width:560px){.card{padding:28px 22px}.hero{padding:40px 20px 56px}h1{font-size:22px}}
   </style>
 </head>
 <body>
-  <h1>Termos de Uso — AxôPet</h1>
-  <p class="updated">Última atualização: junho de 2026</p>
+  <header class="hero">
+    <a class="brand" href="./index.html">
+      <span class="logo"><svg viewBox="0 0 512 512" aria-hidden="true" fill="#fff"><g transform="translate(0,-22)"><ellipse cx="256" cy="338" rx="100" ry="84"/><g transform="rotate(-22 150 240)"><ellipse cx="150" cy="240" rx="35" ry="47"/></g><g transform="rotate(-8 212 183)"><ellipse cx="212" cy="183" rx="34" ry="49"/></g><g transform="rotate(8 300 183)"><ellipse cx="300" cy="183" rx="34" ry="49"/></g><g transform="rotate(22 362 240)"><ellipse cx="362" cy="240" rx="35" ry="47"/></g></g></svg></span>
+      <span class="brand-name">AxôPet</span>
+    </a>
+    <p class="tagline">Termos de Uso</p>
+  </header>
 
-  <h2>1. Aceitação dos termos</h2>
-  <p>
-    Ao usar o AxôPet, você concorda com estes Termos de Uso. Se não concordar,
-    não utilize o aplicativo.
-  </p>
+  <div class="wrap">
+    <main class="card">
+      <h1>Termos de Uso</h1>
+      <span class="updated">Última atualização: junho de 2026</span>
 
-  <h2>2. Sobre o aplicativo</h2>
-  <p>
-    O AxôPet é uma plataforma para conectar pessoas interessadas em adotar pets
-    com responsáveis que colocam animais para adoção. Não somos intermediários
-    financeiros nem garantimos adoções.
-  </p>
+      <h2>1. Aceitação dos termos</h2>
+      <p>
+        Ao usar o AxôPet, você concorda com estes Termos de Uso. Se não concordar,
+        não utilize o aplicativo.
+      </p>
 
-  <h2>3. Responsabilidades do usuário</h2>
-  <p>Ao usar o AxôPet, você se compromete a:</p>
-  <ul>
-    <li>Fornecer informações verdadeiras sobre si e sobre os pets</li>
-    <li>Usar o app apenas para fins de adoção responsável</li>
-    <li>Não publicar conteúdo falso, enganoso ou ofensivo</li>
-    <li>Não usar o app para fins comerciais ou de venda de animais</li>
-    <li>Tratar outros usuários com respeito</li>
-  </ul>
+      <h2>2. Sobre o aplicativo</h2>
+      <p>
+        O AxôPet é uma plataforma para conectar pessoas interessadas em adotar pets
+        com responsáveis que colocam animais para adoção. Não somos intermediários
+        financeiros nem garantimos adoções.
+      </p>
 
-  <h2>4. Conteúdo proibido</h2>
-  <p>É expressamente proibido:</p>
-  <ul>
-    <li>Publicar animais para venda (não adoção)</li>
-    <li>Conteúdo que incite maus-tratos a animais</li>
-    <li>Spam, assédio ou comunicações inapropriadas</li>
-    <li>Informações falsas sobre saúde ou temperamento dos pets</li>
-    <li>Uso automatizado ou scraping do aplicativo</li>
-  </ul>
+      <h2>3. Responsabilidades do usuário</h2>
+      <p>Ao usar o AxôPet, você se compromete a:</p>
+      <ul>
+        <li>Fornecer informações verdadeiras sobre si e sobre os pets</li>
+        <li>Usar o app apenas para fins de adoção responsável</li>
+        <li>Não publicar conteúdo falso, enganoso ou ofensivo</li>
+        <li>Não usar o app para fins comerciais ou de venda de animais</li>
+        <li>Tratar outros usuários com respeito</li>
+      </ul>
 
-  <h2>5. Adoção responsável</h2>
-  <p>
-    A adoção de animais é um compromisso sério. Ao demonstrar interesse em
-    adotar, você declara ter condições adequadas para cuidar do animal.
-  </p>
+      <h2>4. Conteúdo proibido</h2>
+      <p>É expressamente proibido:</p>
+      <ul>
+        <li>Publicar animais para venda (não adoção)</li>
+        <li>Conteúdo que incite maus-tratos a animais</li>
+        <li>Spam, assédio ou comunicações inapropriadas</li>
+        <li>Informações falsas sobre saúde ou temperamento dos pets</li>
+        <li>Uso automatizado ou scraping do aplicativo</li>
+      </ul>
 
-  <h2>6. Limitação de responsabilidade</h2>
-  <p>O AxôPet não se responsabiliza por:</p>
-  <ul>
-    <li>O resultado das adoções facilitadas pelo app</li>
-    <li>A veracidade das informações publicadas pelos usuários</li>
-    <li>Danos decorrentes do uso do aplicativo</li>
-  </ul>
+      <h2>5. Adoção responsável</h2>
+      <p>
+        A adoção de animais é um compromisso sério. Ao demonstrar interesse em
+        adotar, você declara ter condições adequadas para cuidar do animal.
+      </p>
 
-  <h2>7. Denúncias</h2>
-  <p>
-    Para reportar conteúdo inadequado, use o botão "Reportar" disponível nos
-    perfis de pets e nas conversas.
-  </p>
+      <h2>6. Limitação de responsabilidade</h2>
+      <p>O AxôPet não se responsabiliza por:</p>
+      <ul>
+        <li>O resultado das adoções facilitadas pelo app</li>
+        <li>A veracidade das informações publicadas pelos usuários</li>
+        <li>Danos decorrentes do uso do aplicativo</li>
+      </ul>
 
-  <h2>8. Alterações nos termos</h2>
-  <p>
-    Podemos atualizar estes termos. Você será notificado em caso de mudanças
-    significativas.
-  </p>
+      <h2>7. Denúncias</h2>
+      <p>
+        Para reportar conteúdo inadequado, use o botão "Reportar" disponível nos
+        perfis de pets e nas conversas.
+      </p>
 
-  <h2>9. Contato</h2>
-  <p><a href="mailto:contato@axopetapp.com">contato@axopetapp.com</a></p>
+      <h2>8. Alterações nos termos</h2>
+      <p>
+        Podemos atualizar estes termos. Você será notificado em caso de mudanças
+        significativas.
+      </p>
 
-  <footer>© 2026 AxôPet</footer>
+      <h2>9. Contato</h2>
+      <p><a href="mailto:contato@axopetapp.com">contato@axopetapp.com</a></p>
+
+      <a class="back" href="./index.html">← Voltar</a>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="./privacy.html">Privacidade</a>·
+      <a href="./terms.html">Termos</a>·
+      <a href="./delete-account.html">Excluir conta</a>
+    </nav>
+    <p>© 2026 AxôPet · Todos os direitos reservados</p>
+    <p class="muted">contato@axopetapp.com</p>
+  </footer>
 </body>
 </html>

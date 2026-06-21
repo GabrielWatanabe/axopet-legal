@@ -4,55 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-mail confirmado — AxôPet</title>
+  <meta name="robots" content="noindex" />
   <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; min-height: 100vh;
-      display: flex; align-items: center; justify-content: center;
-      background: #f5f5f5; padding: 24px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    }
-    .card {
-      max-width: 420px; width: 100%; background: #ffffff;
-      border-radius: 20px; overflow: hidden;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.10); text-align: center;
-    }
-    .header { background: #C25B4C; padding: 40px 32px 28px; color: #fff; }
-    .paw { font-size: 52px; line-height: 1; margin-bottom: 10px; }
-    .brand { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
-    .check {
-      width: 72px; height: 72px; margin: -36px auto 0;
-      background: #fff; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-    }
-    .check svg { width: 38px; height: 38px; }
-    .body { padding: 16px 36px 40px; }
-    h1 { font-size: 22px; color: #1a1a1a; margin: 16px 0 10px; }
-    p { font-size: 15px; color: #555; line-height: 1.6; margin: 0; }
-    .hint {
-      margin-top: 24px; font-size: 13px; color: #888;
-      background: #FBEEE9; border-radius: 12px; padding: 14px 18px;
-    }
+    :root{--brand:#C25B4C;--brand-light:#D67E6E;--bg:#FAF7F5;--ink:#23201f;--muted:#8a817c;--tint:#FBEEE9;--card:#fff;--ok:#2BA84A}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);padding:24px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink)}
+    .card{max-width:420px;width:100%;background:var(--card);border-radius:22px;overflow:hidden;box-shadow:0 14px 50px rgba(80,30,20,.14);text-align:center}
+    .hero{background:linear-gradient(135deg,var(--brand-light),var(--brand));padding:38px 32px 30px;color:#fff}
+    .brand{display:inline-flex;align-items:center;gap:11px}
+    .logo{width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center}
+    .logo svg{width:28px;height:28px}
+    .brand-name{font-size:25px;font-weight:800;letter-spacing:-.5px}
+    .check{width:78px;height:78px;margin:-39px auto 0;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(80,30,20,.16)}
+    .check svg{width:40px;height:40px}
+    .body{padding:18px 36px 40px}
+    h1{font-size:23px;margin:14px 0 8px}
+    p{font-size:15px;color:#555;line-height:1.6;margin:0}
+    .hint{margin-top:24px;font-size:13.5px;color:#7a6f6a;background:var(--tint);border-radius:14px;padding:16px 20px;line-height:1.55}
+    .foot{margin-top:22px;font-size:12px;color:#b7afaa}
+    .foot a{color:var(--brand);text-decoration:none}
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="header">
-      <div class="paw">🐾</div>
-      <div class="brand">AxôPet</div>
+    <div class="hero">
+      <span class="brand">
+        <span class="logo"><svg viewBox="0 0 512 512" aria-hidden="true" fill="#fff"><g transform="translate(0,-22)"><ellipse cx="256" cy="338" rx="100" ry="84"/><g transform="rotate(-22 150 240)"><ellipse cx="150" cy="240" rx="35" ry="47"/></g><g transform="rotate(-8 212 183)"><ellipse cx="212" cy="183" rx="34" ry="49"/></g><g transform="rotate(8 300 183)"><ellipse cx="300" cy="183" rx="34" ry="49"/></g><g transform="rotate(22 362 240)"><ellipse cx="362" cy="240" rx="35" ry="47"/></g></g></svg></span>
+        <span class="brand-name">AxôPet</span>
+      </span>
     </div>
+
     <div class="check">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#C25B4C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M20 6L9 17l-5-5" />
-      </svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="#2BA84A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
     </div>
+
     <div class="body">
       <h1>E-mail confirmado!</h1>
       <p>Sua conta no AxôPet está ativa. 🎉</p>
       <div class="hint">
-        Pode fechar esta aba, <strong>voltar para o app</strong> e fazer login para encontrar seu novo melhor amigo.
+        Pode fechar esta aba, <strong>voltar para o app</strong> e fazer login
+        para encontrar seu novo melhor amigo.
       </div>
+      <div class="foot">Precisa de ajuda? <a href="mailto:contato@axopetapp.com">contato@axopetapp.com</a></div>
     </div>
   </div>
 </body>
